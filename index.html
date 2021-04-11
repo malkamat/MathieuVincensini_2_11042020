@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- police du site -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <!-- feuille de style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Reservia</title>
+</head>
+
+<body>
+
+    <!-- navigation site -->
+    <nav class="navigation">
+        <img class="navigation-logo" src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo de Reservia">
+        <a class="navigation-liens_active" href="#hebergement">hébergements</a>
+        <a class="navigation-liens" href="#activites">activités</a>
+        <!-- bouton d'inscription -->
+        <a href="#" class="inscription">S'inscrire</a>
+        </div>
+
+    </nav>
+    <!-- header -->
+    <header class="header">
+        <!-- titre -->
+        <div class="titre">
+            <h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
+            <small>En pein centre ville ou en pleine nature</small>
+        </div>
+        <!-- input recherche -->
+        <form class="recherche" action="">
+            <i class="recherche-icone fas fa-map-marker-alt">
+            </i>
+            <input class="input" type="text" placeholder="localisation" name="search" value="Marseille, France">
+            <button class="recherche-button" type="submit">Rechercher</button>
+        </form>
+        <!-- Filtres recherche -->
+        <div class="filtres">
+            <p>Filtres</p>
+            <ul class="filtres-liste">
+                <li class="filtres-liste_item1"><i class="filtre-icone fas fa-money-bill-wave"></i><button
+                        class="filtre-button" type="submit">Économique</button></li>
+                <li class="filtres-liste_item2"><i class="filtre-icone fas fa-child"></i><button class="filtre-button"
+                        type="submit">Familial</button></li>
+                <li class="filtres-liste_item3"><i class="filtre-icone fas fa-heart"></i><button class="filtre-button"
+                        type="submit">Romantique</button></li>
+                <li class="filtres-liste_item4"><i class="filtre-icone fas fa-dog"></i><button class="filtre-button"
+                        type="submit">Animaux autorisé</button></li>
+            </ul>
+        </div>
+        <div class="header-info">
+            <div class="header-info_icone ">
+                <i class="fas fa-info"></i>
+            </div>
+            <small class="header-info_text">Pus de 500 hébergements sont disponible dans cette ville</small>
+        </div>
+    </header>
+
+    <!-- section hébergement -->
+
+    <main id="hebergement" class="hebergement">
+        <!-- artice hébergement -->
+        <article class="hebergement-article">
+            <h2 class="hebergement-article_titre">
+                Hébergements à Marseille
+            </h2>
+            <div class="hebergement-article_grille">
+                <div class="hebergement-article-carte">
+                    <img class="hebergement-article-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-article-carte-description">
+                        <h3 class="hebergement-article-carte-description_titre">Auberge a Cannebière</h3>
+                        <p class="hebergement-article-carte-description_description">Nuit à partir de <strong> 25€</strong></p>
+                        <strong class="hebergement-article-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="unfill-star fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-article-carte">
+                    <img class="hebergement-article-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-article-carte-description">
+                        <h3 class="hebergement-article-carte-description_titre">Hôtel du port</h3>
+                        <p class="hebergement-article-carte-description_description">Nuit à partir de <strong> 52€</strong></p>
+                        <strong class="hebergement-article-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-article-carte">
+                    <img class="hebergement-article-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-article-carte-description">
+                        <h3 class="hebergement-article-carte-description_titre">Hôtel les mouettes</h3>
+                        <p class="hebergement-article-carte-description_description">Nuit à partir de <strong> 75€</strong></p>
+                        <strong class="hebergement-article-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="unfill-star fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-article-carte">
+                    <img class="hebergement-article-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-article-carte-description">
+                        <h3 class="hebergement-article-carte-description_titre">Hôtel de la mer</h3>
+                        <p class="hebergement-article-carte-description_description">Nuit à partir de <strong> 45€</strong></p>
+                        <strong class="hebergement-article-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="unfill-star fas fa-star"></i><i
+                                class="unfill-star fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-article-carte">
+                    <img class="hebergement-article-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-article-carte-description">
+                        <h3 class="hebergement-article-carte-description_titre">Auberge Le panier</h3>
+                        <p class="hebergement-article-carte-description_description">Nuit à partir de <strong> 23€</strong></p>
+                        <strong class="hebergement-article-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="unfill-star fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-article-carte">
+                    <img class="hebergement-article-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-article-carte-description">
+                        <h3 class="hebergement-article-carte-description_titre">Hôtel chez Amina</h3>
+                        <p class="hebergement-article-carte-description_description">Nuit à partir de <strong> 96€</strong></p>
+                        <strong class="hebergement-article-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></strong>
+                    </div>
+                </div>
+            </div>
+            <p class="hebergement-article_more">Afficher plus</p>
+        </article>
+        <!-- aside hébergement -->
+        <aside class="hebergement-aside">
+            <div class="hebergement-aside_titre">
+                <h2>
+                    Les plus populaires
+                </h2>
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="hebergement-aside_grille">
+                
+                <div class="hebergement-aside-carte">
+                    <img class="hebergement-aside-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-aside-carte-description">
+                        <h3 class="hebergement-aside-carte-description_titre">Hôtel Le soleil du matin</h3>
+                        <p class="hebergement-aside-carte-description_description">Nuit à partir de <strong> 128€</strong></p>
+                        <strong class="hebergement-aside-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-aside-carte">
+                    <img class="hebergement-aside-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-aside-carte-description">
+                        <h3 class="hebergement-aside-carte-description_titre">Au coeur de l'eau <br>Chambre d'hôtes</h3>
+                        <p class="hebergement-aside-carte-description_description">Nuit à partir de <strong> 71€</strong></p>
+                        <strong class="hebergement-aside-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="unfill-star fas fa-star"></i></strong>
+                    </div>
+                </div>
+                <div class="hebergement-aside-carte">
+                    <img class="hebergement-aside-carte-image"
+                        src="./Projet 2 - Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                        alt="image" class="produit__image">
+                    <div class="hebergement-aside-carte-description">
+                        <h3 class="hebergement-aside-carte-description_titre">Hôtel Le soleil du matin</h3>
+                        <p class="hebergement-aside-carte-description_description">Nuit à partir de <strong> 128€</strong></p>
+                        <strong class="hebergement-aside-carte-description_note"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></strong>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <section class="activites" id="activites">
+        <h3 class="activites-titre">Activités à Marseille</h3>
+        <div class="activites-grille">
+            <figure class="activites-grille_carte1">
+                <img src="./Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="87" height="120" 
+                  alt="Computer Hope Guy">
+                <figcaption>Vieux port</figcaption>
+              </figure>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
