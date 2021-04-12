@@ -258,6 +258,7 @@ img {
 
 
 .hebergement-article-carte {
+    cursor: pointer;
     width: 100%;
     border-radius: 10px;
     height: 200px;
@@ -323,6 +324,7 @@ img {
 
 
 .hebergement-aside-carte {
+    cursor: pointer;
     width: 90%;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -395,7 +397,7 @@ img {
         margin: 20px 0 20px 0px;
     }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 410px) {
     
 
     .hebergement-article_grille {
