@@ -42,6 +42,17 @@ img {
     color: #727272;
 }
 
+
+.navigation-liens_active::before {
+    content: " ";
+    position: absolute;
+    right: 29%;
+    top: 0px;
+    border-top: 3px solid blue;
+    width: 131px;
+
+}
+
 .navigation-liens_active,
 .inscription {
     color: #0065fc;
@@ -63,6 +74,40 @@ img {
         grid-column-start: 2;
 
     }
+
+    .navigation-liens_active::before {
+        position: absolute;
+        top: 125px;
+        left: 0;
+        width: 50%;
+    }
+
+    .navigation-liens::before {
+        content: " ";
+        position: absolute;
+        top: 125px;
+        right: 0;
+        border-top: 3px solid rgb(202, 202, 202);
+        width: 50%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .navigation {
+        margin: 20px 15px 60px 15px;
+
+    }
+    .navigation-liens{
+    margin-right: 30px;
+
+}
+    .navigation-liens_active{
+    margin-left: 30px;
+
+}
 }
 
 
@@ -142,19 +187,23 @@ img {
 
 .filtres-liste li {
     margin-right: 30px;
-    cursor: pointer;
 
 }
 
+.filtre-button:hover {
+    background-color: #0065fc;
+    color: #f1f1f1;
+    transition: 0.3s ease-in-out
+}
 .filtre-button {
     padding: 10px 15px 10px 50px;
     border-radius: 90px 60px 60px 90px;
     border: 0.3px solid black;
     left: 50px;
     background-color: white;
-    cursor: pointer;
     outline: none;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .filtre-icone {
@@ -204,27 +253,37 @@ img {
     .filtres-liste {
         margin-top: 15px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 180px);
-        row-gap: 20px;
+        grid-template-columns: repeat(auto-fill, 160px);
+        row-gap: 15px;
 
     }
+
+    .filtres-liste_item4,.filtres-liste_item3 {
+        grid-column-start: span 2;
+    } 
 
     .filtres-liste li {
         margin-right: 0px;
 
     }
+    
 }
 
 @media screen and (max-width: 500px) {
     .header {
-        margin: 30px 10px 0 10px;
+        margin: 30px 15px 0 15px;
         display: flex;
         flex-direction: column;
+    }
+    h1 {
+        font-size: 1.6em;
+        text-align: justify;
     }
 
     .filtres-liste_item4 {
         grid-row-start: 3;
     }
+   
 
     .header-info {
         margin-left: 10px;
@@ -237,6 +296,8 @@ img {
     margin: 30px 50px 40px 50px;
     display: flex;
 }
+
+/* article */
 
 .hebergement-article {
     background-color: #f2f2f2;
@@ -252,7 +313,7 @@ img {
     display: grid;
     justify-content: center;
     gap: 40px;
-    grid-template-columns: repeat(auto-fill, 280px);
+    grid-template-columns: repeat(auto-fill, 250px);
     grid-template-rows: repeat(auto, 220px);
 }
 
@@ -282,9 +343,10 @@ img {
 .hebergement-article-carte-description {
     padding: 10px 0 10px 10px;
 }
+
 .hebergement-article-carte-description_description {
     color: #727272;
-    font-weight: lighter;    
+    font-weight: lighter;
 }
 
 .hebergement-article_more {
@@ -298,6 +360,8 @@ img {
 .unfill-star {
     color: #727272;
 }
+
+/* aside */
 .hebergement-aside {
     padding: 35px 30px 35px 30px;
     background-color: #f2f2f2;
@@ -306,13 +370,15 @@ img {
     width: 33%;
     max-height: 650px;
 }
+
 .hebergement-aside_titre {
     display: flex;
     justify-content: space-between;
 }
-.hebergement-aside_titre i{
+
+.hebergement-aside_titre i {
     padding-top: 5px;
-    font-size: 25px;    
+    font-size: 25px;
 }
 
 .hebergement-aside_grille {
@@ -349,13 +415,15 @@ img {
     padding: 10px 60px 0px 10px;
     display: flex;
     flex-direction: column;
-    
+
 }
+
 .hebergement-aside-carte-description_description {
     color: #727272;
-    font-weight: lighter;   
-    flex: 1; 
+    font-weight: lighter;
+    flex: 1;
 }
+
 .hebergement-aside-carte-description_note {
     margin-bottom: 8px;
 }
@@ -365,13 +433,14 @@ img {
         margin: 30px 0px 0 0px;
         flex-direction: column-reverse;
     }
-    
+
     .hebergement-aside {
         width: 100%;
         border-radius: 0;
         margin: 0;
         padding: 0;
     }
+
     .hebergement-aside_grille {
         margin-left: 10px;
         align-items: center;
@@ -382,39 +451,123 @@ img {
         background-color: white;
         padding: 0;
     }
+
     .hebergement-article_titre {
         margin: 30px 0 20px 30px;
     }
+
     .hebergement-aside_titre {
         margin: 30px 30px 20px 30px;
     }
 
     .hebergement-aside-carte-description {
-        padding: 10px 20px 0px 10px;    
+        padding: 10px 20px 0px 10px;
     }
 
     .hebergement-article_grille {
         margin: 20px 0 20px 0px;
     }
 }
-@media screen and (max-width: 410px) {
-    
+
+@media screen and (max-width: 510px) {
+
 
     .hebergement-article_grille {
         display: flex;
         align-items: center;
-        flex-direction: column;   
+        flex-direction: column;
     }
+
     .hebergement-aside_grille {
         margin: 0;
         align-items: center;
     }
+
     .hebergement-article-carte {
         width: 90%;
     }
+
     .hebergement-aside-carte {
         width: 90%;
     }
+}
 
-    
+
+/* section activités */
+
+
+.activites {
+    margin: 30px 50px 0 50px;
+
+}
+
+.activites-grille {
+    margin-top: 20px;
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 45px);
+    column-gap: 40px;
+
+}
+
+.activites-grille_carte {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 10px 10px 10px 10px;
+}
+.activites-grille_carte img{
+    border-radius: 10px;
+
+}
+
+.activites-grille_carte1 {
+    grid-row-end: span 10;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+}
+.activites-grille_carte2 {
+    grid-row-end: span 4;
+    grid-column-start: auto;
+  
+
+}
+/* 
+.activites-grille_carte3 {
+    grid-row-end: 10;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+
+}
+.activites-grille_carte1 {
+    grid-row-end: 10;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+
+}
+.activites-grille_carte1 {
+    grid-row-end: 10;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+
+}
+.activites-grille_carte1 {
+    grid-row-end: 10;
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+
+} */
+
+.activites-grille_carte1 img,.activites-grille_carte2 img {
+    height: 90%;
+    width: 100%;
 }
