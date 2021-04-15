@@ -707,6 +707,9 @@ img {
 /* Footer */
 
 .footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
     display: flex;
     justify-content: space-between;
     margin: 100px 0 0px 0;
