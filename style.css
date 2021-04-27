@@ -218,6 +218,7 @@ img {
     border: 0.1px solid rgb(202, 202, 202);
     font-weight: bolder;
     color: black;
+    outline: none;
 }
 
 .recherche-button {
@@ -370,10 +371,6 @@ img {
     .input {
         padding-right: 0;
     }
-    .input- {
-        content: "\f002";
-        font-family: "Font Awesome 5 Free";
-    }
 
     .recherche-button {
         display: none;
@@ -389,6 +386,7 @@ img {
         background: #0065fc;
         border-radius: 10px;
         top: 2px;
+        cursor: pointer;
     }
     .recherche-button--small::before {
         height: 46px;
@@ -412,6 +410,7 @@ img {
     .recherche-icone {
 
         left: 0px;
+        top: 2px;
 
     }
 }
